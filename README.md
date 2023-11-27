@@ -63,7 +63,7 @@ Example output
 Call method on enumerable
 
 ```go
-nums.Reduce(func(prev, curr *int){
+total := nums.Reduce(func(prev, curr *int){
 	return *prev + *curr
 }, 0)
 ```
