@@ -10,16 +10,22 @@ This includes
 | `.Filter()` | will remove items in the `enumerable` object that do not conform to the filters passed callback                     |
 | `.Reduce()` | this will allow for an enumerable object to collapse into a single value using a callback method and a starting value |
 
-
 ## Example usage
 
-#### `.Map()`
+Import the package
+
+```go
+import (
+	js_array_methods "github.com/callummclu/js-array-methods-in-go" 
+```
 
 Create the Enumerable
 
 ```go
 nums := NewEnumerable([]int{1,2,3,4,5})
 ```
+
+#### `.Map()`
 
 Call method on enumerable
 
@@ -37,12 +43,6 @@ Example output
 
 #### `.Filter()`
 
-Create the Enumerable
-
-```go
-nums := NewEnumerable([]int{1,2,3,4,5})
-```
-
 Call method on enumerable
 
 ```go
@@ -57,14 +57,7 @@ Example output
 [2 4]
 ```
 
-
 #### `.Reduce()`
-
-Create the Enumerable
-
-```go
-nums := NewEnumerable([]int{1,2,3,4,5})
-```
 
 Call method on enumerable
 
@@ -79,6 +72,5 @@ Example output
 ```go
 15
 ```
-
 
 All of these method should also function with any other data type not just int
