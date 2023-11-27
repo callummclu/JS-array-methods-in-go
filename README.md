@@ -16,7 +16,8 @@ Import the package
 
 ```go
 import (
-	js_array_methods "github.com/callummclu/js-array-methods-in-go" 
+	js_array_methods "github.com/callummclu/js-array-methods-in-go"
+)
 ```
 
 Create the Enumerable
