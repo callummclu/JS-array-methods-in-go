@@ -23,7 +23,7 @@ import (
 Create the Enumerable
 
 ```go
-nums := NewEnumerable([]int{1,2,3,4,5})
+nums := js_array_methods.NewEnumerable([]int{1,2,3,4,5})
 ```
 
 #### `.Map()`
