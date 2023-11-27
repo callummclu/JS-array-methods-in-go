@@ -16,13 +16,14 @@ Import the package
 
 ```go
 import (
-	js_array_methods "github.com/callummclu/js-array-methods-in-go" 
+	js_array_methods "github.com/callummclu/js-array-methods-in-go"
+)
 ```
 
 Create the Enumerable
 
 ```go
-nums := NewEnumerable([]int{1,2,3,4,5})
+nums := js_array_methods.NewEnumerable([]int{1,2,3,4,5})
 ```
 
 #### `.Map()`
@@ -62,7 +63,7 @@ Example output
 Call method on enumerable
 
 ```go
-nums.Reduce(func(prev, curr *int){
+total := nums.Reduce(func(prev, curr *int){
 	return *prev + *curr
 }, 0)
 ```
